@@ -7,10 +7,10 @@
 ## Screenshots
 
 ### Overview — KPIs & Season Superstars
-![Overview](Overview.png)
+![Overview](overview.png)
 
 ### Standings — Full League Table with xG Metrics
-![Standings](Standings.png)
+![Standings](standings.png)
 
 ### Players — Sortable Stats Database + Performance Charts
 ![Players](players.png)
