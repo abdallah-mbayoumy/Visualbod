@@ -4,23 +4,23 @@
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 ### Overview — KPIs & Season Superstars
-![Overview](screenshots/overview.png)
+![Overview](Screenshot 2026-04-18 203335.png)
 
 ### Standings — Full League Table with xG Metrics
-![Standings](screenshots/standings.png)
+![Standings](Screenshot 2026-04-18 203426.png)
 
 ### Players — Sortable Stats Database + Performance Charts
-![Players](screenshots/players.png)
+![Players](Screenshot 2026-04-18 203449.png)
 
 ### xG Analysis — Overperformers, Scatter Plot & Bubble Chart
-![xG Analysis](screenshots/xg_analysis.png)
+![xG Analysis](Screenshot 2026-04-18 203542.png)
 
 ---
 
-## 📊 What This Project Does
+## What This Project Does
 
 PremierStat is an interactive analytics dashboard that transforms raw Premier League CSV data into a rich, filterable visual experience. It covers **5 complete seasons**, **27 clubs**, **1,226 unique players**, and over **5,300 goals**.
 
@@ -28,7 +28,7 @@ Every section is filterable by season, and the data is stored in a relational SQ
 
 ---
 
-## 🗂️ Dashboard Tabs
+## Dashboard Tabs
 
 | Tab | What you'll find |
 |-----|-----------------|
@@ -40,7 +40,7 @@ Every section is filterable by season, and the data is stored in a relational SQ
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -54,7 +54,7 @@ Every section is filterable by season, and the data is stored in a relational SQ
 
 ---
 
-## 🗃️ Database Schema
+## Database Schema
 
 ```
 Seasons         — SeasonID, SeasonName
@@ -66,7 +66,7 @@ TeamSeasonStats — TeamID, SeasonID, Matches, Wins, Draws, Loses, Goals, GoalsA
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -108,13 +108,13 @@ python insert_data.py
 You'll see a progress log like:
 
 ```
-✅ TeamSeasonStats table ready
-🗑️  Clearing old data...
-📅 Inserting seasons...
+ TeamSeasonStats table ready
+  Clearing old data...
+ Inserting seasons...
    → 2020/21 (ID=1)
    → 2021/22 (ID=2)
    ...
-✅ IMPORT COMPLETE in 4.2s
+ IMPORT COMPLETE in 4.2s
 ```
 
 ### 6. Run the server
@@ -131,7 +131,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 All endpoints support `?season_id=` for season filtering.
 
@@ -156,7 +156,7 @@ All endpoints support `?season_id=` for season filtering.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 premierstat/
@@ -178,7 +178,7 @@ premierstat/
 
 ---
 
-## 📈 Data Coverage
+## Data Coverage
 
 | Metric | Value |
 |--------|-------|
@@ -191,7 +191,7 @@ premierstat/
 
 ---
 
-## 🔑 Key Features
+## Key Features
 
 - **Season filter** — every chart and table updates when you switch seasons
 - **Sortable tables** — click any column header to sort instantly
@@ -203,10 +203,10 @@ premierstat/
 
 ---
 
-## 📄 License
+## License
 
 This project is for educational and portfolio purposes. EPL data sourced from publicly available statistics.
 
 ---
 
-> Built with ⚡ by [Your Name] · [LinkedIn](https://linkedin.com/in/your-profile) · [GitHub](https://github.com/your-username)
+> Built by [Abdallah Bayoumy] · [LinkedIn](https://linkedin.com/in/abdallah-bayoumy) · [GitHub](https://github.com/abdallah-mbayoumy)
