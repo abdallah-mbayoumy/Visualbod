@@ -1,0 +1,525 @@
+﻿"number";"player";"team";"apps";"min";"goals";"a";"xG";"xA";"xG90";"xA90"
+1;"Harry Kane";"Tottenham";35;3097;23;14;22.17;7.58;0.64;0.22
+2;"Mohamed Salah";"Liverpool";37;3085;22;5;20.25;6.53;0.59;0.19
+3;"Bruno Fernandes";"Manchester United";37;3117;18;12;16.02;11.47;0.46;0.33
+4;"Son Heung-Min";"Tottenham";37;3139;17;10;11.02;9.51;0.32;0.27
+5;"Patrick Bamford";"Leeds";38;3085;17;7;18.4;3.78;0.54;0.11
+6;"Dominic Calvert-Lewin";"Everton";33;2878;16;0;18.21;2.1;0.57;0.07
+7;"Jamie Vardy";"Leicester";34;2848;15;9;19.94;5.09;0.63;0.16
+8;"Ollie Watkins";"Aston Villa";37;3330;14;5;16.28;5.31;0.44;0.14
+9;"Ilkay Gündogan";"Manchester City";28;2033;13;2;9.57;3.82;0.42;0.17
+10;"Alexandre Lacazette";"Arsenal";31;1939;13;2;12.03;2.21;0.56;0.1
+11;"Callum Wilson";"Newcastle United";26;2079;12;5;13.59;3.05;0.59;0.13
+12;"Kelechi Iheanacho";"Leicester";25;1452;12;2;9.05;3.53;0.56;0.22
+13;"Danny Ings";"Southampton";29;2200;12;4;8.28;2.31;0.34;0.09
+14;"Chris Wood";"Burnley";33;2765;12;3;12.95;2.04;0.42;0.07
+15;"Wilfried Zaha";"Crystal Palace";30;2615;11;2;8.8;3.7;0.3;0.13
+16;"Marcus Rashford";"Manchester United";37;2941;11;9;9.58;4.19;0.29;0.13
+17;"Sadio Mané";"Liverpool";35;2805;11;7;14.83;7.79;0.48;0.25
+18;"Gareth Bale";"Tottenham";20;909;11;2;5.8;1.84;0.57;0.18
+19;"Matheus Pereira";"West Bromwich Albion";33;2594;11;6;6.95;6.36;0.24;0.22
+20;"Pierre-Emerick Aubameyang";"Arsenal";29;2333;10;3;10.45;2.43;0.4;0.09
+21;"Michail Antonio";"West Ham";26;1993;10;5;14.14;3.19;0.64;0.14
+22;"Christian Benteke";"Crystal Palace";30;1824;10;1;7.46;0.7;0.37;0.03
+23;"Raheem Sterling";"Manchester City";31;2539;10;7;12.05;6.63;0.43;0.23
+24;"Edinson Cavani";"Manchester United";26;1355;10;3;8.6;2.32;0.57;0.15
+25;"Anwar El Ghazi";"Aston Villa";28;1612;10;0;9.04;1.88;0.5;0.11
+26;"Nicolas Pepe";"Arsenal";29;1602;10;1;6;1.01;0.34;0.06
+27;"Tomas Soucek";"West Ham";38;3420;10;1;8.98;2.44;0.24;0.06
+28;"Roberto Firmino";"Liverpool";36;2882;9;7;12.86;6.12;0.4;0.19
+29;"Jesse Lingard";"West Ham";16;1434;9;4;5.25;2.33;0.33;0.15
+30;"Riyad Mahrez";"Manchester City";27;1961;9;6;6.23;6.09;0.29;0.28
+31;"Gabriel Jesus";"Manchester City";29;2053;9;4;9.65;3.55;0.42;0.16
+32;"Phil Foden";"Manchester City";28;1606;9;5;6.08;4.75;0.34;0.27
+33;"Harvey Barnes";"Leicester";25;1954;9;4;6.7;1.77;0.31;0.08
+34;"Diogo Jota";"Liverpool";19;1114;9;0;7.06;1.76;0.57;0.14
+35;"Che Adams";"Southampton";36;2685;9;5;12.12;5.23;0.41;0.18
+36;"James Ward-Prowse";"Southampton";38;3420;8;7;5.44;4.07;0.14;0.11
+37;"Jarrod Bowen";"West Ham";38;2599;8;5;7.99;5.23;0.28;0.18
+38;"Neal Maupay";"Brighton";33;2526;8;2;13.77;4.28;0.49;0.15
+39;"Joe Willock";"Arsenal,Newcastle United";21;1215;8;0;5.09;0.73;0.38;0.05
+40;"James Maddison";"Leicester";31;2123;8;5;3.83;5.39;0.16;0.23
+41;"David McGoldrick";"Sheffield United";35;2409;8;1;7.61;1.12;0.28;0.04
+42;"Stuart Dallas";"Leeds";38;3412;8;2;4.46;2.08;0.12;0.05
+43;"Jack Harrison";"Leeds";36;2871;8;8;6.25;7.52;0.2;0.24
+44;"Bertrand Traoré";"Aston Villa";36;2362;7;6;6.3;4.57;0.24;0.17
+45;"Jorginho";"Chelsea";28;2022;7;1;6.97;1.95;0.31;0.09
+46;"Rodrigo";"Leeds";26;1285;7;2;5.76;3.2;0.4;0.22
+47;"Richarlison";"Everton";34;2883;7;3;10.67;3.39;0.33;0.11
+48;"Ferrán Torres";"Manchester City";24;1305;7;2;5.73;2.2;0.4;0.15
+49;"Mason Greenwood";"Manchester United";31;1825;7;2;6.98;2.43;0.34;0.12
+50;"Timo Werner";"Chelsea";35;2605;6;8;13.43;6.67;0.46;0.23
+51;"Kevin De Bruyne";"Manchester City";25;2008;6;12;9.98;10.96;0.45;0.49
+52;"Danny Welbeck";"Brighton";24;1551;6;1;7.38;3.23;0.43;0.19
+53;"Jack Grealish";"Aston Villa";26;2187;6;10;5.19;9.33;0.21;0.38
+54;"Tammy Abraham";"Chelsea";22;1027;6;1;6.19;0.72;0.54;0.06
+55;"Gylfi Sigurdsson";"Everton";36;2250;6;5;6.4;4.84;0.26;0.19
+56;"James Rodríguez";"Everton";23;1802;6;4;3.36;5.44;0.17;0.27
+57;"Youri Tielemans";"Leicester";38;3359;6;4;4.17;3.31;0.11;0.09
+58;"Mason Mount";"Chelsea";36;2891;6;5;6.88;9.85;0.21;0.31
+59;"Raphinha";"Leeds";30;2369;6;9;6.22;9.52;0.24;0.36
+60;"Kurt Zouma";"Chelsea";24;2024;5;0;3.14;0.08;0.14;0
+61;"Pablo Fornals";"West Ham";33;2603;5;4;6.75;2.53;0.23;0.09
+62;"Callum Robinson";"West Bromwich Albion";28;1580;5;0;3.2;1.05;0.18;0.06
+63;"Lewis Dunk";"Brighton";33;2934;5;0;2.71;0.83;0.08;0.03
+64;"Pedro Neto";"Wolverhampton Wanderers";31;2570;5;6;5.49;5.74;0.19;0.2
+65;"Bobby Reid";"Fulham";33;2394;5;2;4.27;1.31;0.16;0.05
+66;"Rúben Neves";"Wolverhampton Wanderers";36;2681;5;1;4.74;2.06;0.16;0.07
+67;"Bukayo Saka";"Arsenal";32;2577;5;3;7.17;4.51;0.25;0.16
+68;"Leandro Trossard";"Brighton";35;2647;5;5;5.41;5.4;0.18;0.18
+69;"Joelinton";"Newcastle United";31;2006;4;2;5.63;2.37;0.25;0.11
+70;"Olivier Giroud";"Chelsea";17;750;4;0;5.07;1.18;0.61;0.14
+71;"Anthony Martial";"Manchester United";22;1494;4;3;7.41;2.62;0.45;0.16
+72;"John Stones";"Manchester City";22;1933;4;0;2.5;0.05;0.12;0
+73;"Sergio Agüero";"Manchester City";12;556;4;1;3.72;1.32;0.6;0.21
+74;"Christian Pulisic";"Chelsea";27;1739;4;2;6.78;2.76;0.35;0.14
+75;"Raúl Jiménez";"Wolverhampton Wanderers";10;824;4;0;2.36;0.63;0.26;0.07
+76;"Mateusz Klich";"Leeds";35;2404;4;5;3;3.65;0.11;0.14
+77;"Kai Havertz";"Chelsea";27;1523;4;3;6.35;1.55;0.38;0.09
+78;"Ademola Lookman";"Fulham";34;2765;4;4;6.25;5.26;0.2;0.17
+79;"Scott McTominay";"Manchester United";32;2121;4;1;1.85;2.11;0.08;0.09
+80;"Stuart Armstrong";"Southampton";33;2791;4;5;2.64;2.9;0.09;0.09
+81;"Miguel Almirón";"Newcastle United";34;2458;4;1;3.51;3.14;0.13;0.11
+82;"Eberechi Eze";"Crystal Palace";34;2570;4;6;2.49;3.74;0.09;0.13
+83;"Fabio Silva";"Wolverhampton Wanderers";32;1341;4;3;6.14;1.17;0.41;0.08
+84;"Allan Saint-Maximin";"Newcastle United";25;1578;3;4;2.83;4.01;0.16;0.23
+85;"Jannik Vestergaard";"Southampton";30;2571;3;0;2.11;0.74;0.07;0.03
+86;"Pascal Groß";"Brighton";34;2469;3;8;5.01;5.37;0.18;0.2
+87;"Theo Walcott";"Everton,Southampton";22;1660;3;3;2.28;1.26;0.12;0.07
+88;"Angelo Ogbonna";"West Ham";28;2493;3;0;1.7;0.43;0.06;0.02
+89;"Ross Barkley";"Aston Villa,Chelsea";26;1574;3;1;3.7;4.32;0.21;0.25
+90;"Ashley Westwood";"Burnley";38;3412;3;3;1.01;6.53;0.03;0.17
+91;"Aleksandar Mitrovic";"Fulham";27;1369;3;3;5.68;2.92;0.37;0.19
+92;"Ben Chilwell";"Chelsea";27;2296;3;5;2.98;2.46;0.12;0.1
+93;"Craig Dawson";"West Ham";22;1925;3;0;2.74;0.05;0.13;0
+94;"Kyle Bartley";"West Bromwich Albion";30;2581;3;1;2.6;0.76;0.09;0.03
+95;"Matej Vydra";"Burnley";28;1363;3;2;5.37;2.12;0.35;0.14
+96;"Michael Keane";"Everton";35;2986;3;1;1.5;1.09;0.05;0.03
+97;"Paul Pogba";"Manchester United";26;1893;3;3;2.99;2.07;0.14;0.1
+98;"Lucas Moura";"Tottenham";30;1392;3;4;1.95;2.06;0.13;0.13
+99;"Hélder Costa";"Leeds";22;1152;3;3;2.6;0.63;0.2;0.05
+100;"Romain Saiss";"Wolverhampton Wanderers";27;2409;3;0;3.17;0.67;0.12;0.03
+101;"Ivan Cavaleiro";"Fulham";36;2477;3;0;5.55;2.68;0.2;0.1
+102;"Ashley Barnes";"Burnley";22;1342;3;0;3.87;0.8;0.26;0.05
+103;"Josh Maja";"Fulham";15;809;3;0;4.92;0.74;0.55;0.08
+104;"Daniel James";"Manchester United";15;920;3;1;2.31;1.33;0.23;0.13
+105;"Tanguy NDombele Alvaro";"Tottenham";33;2141;3;2;1.53;2.13;0.06;0.09
+106;"Sébastien Haller";"West Ham";16;933;3;0;2.55;1.13;0.25;0.11
+107;"Billy Sharp";"Sheffield United";16;723;3;0;2.98;0.58;0.37;0.07
+108;"John McGinn";"Aston Villa";37;3330;3;5;2.17;3.5;0.06;0.09
+109;"Takumi Minamino";"Liverpool,Southampton";19;1004;3;0;2.92;0.81;0.26;0.07
+110;"Daniel Podence";"Wolverhampton Wanderers";24;1718;3;2;2.74;1.84;0.14;0.1
+111;"Mbaye Diagne";"West Bromwich Albion";16;1205;3;2;6.25;0.99;0.47;0.07
+112;"Pierre-Emile Højbjerg";"Tottenham";38;3420;2;4;1.14;1.76;0.03;0.05
+113;"Ola Aina";"Fulham";31;2683;2;1;0.85;1.55;0.03;0.05
+114;"Jeffrey Schlupp";"Crystal Palace";27;1424;2;3;2.02;2.57;0.13;0.16
+115;"Jamaal Lascelles";"Newcastle United";19;1633;2;0;0.77;0.07;0.04;0
+116;"Ayoze Pérez";"Leicester";25;1326;2;1;4.04;1.25;0.27;0.08
+117;"Georginio Wijnaldum";"Liverpool";38;2961;2;0;2.82;1.66;0.09;0.05
+118;"Nathan Redmond";"Southampton";29;1718;2;3;3.83;3.35;0.2;0.18
+119;"Jonny Evans";"Leicester";28;2483;2;2;1.86;0.54;0.07;0.02
+120;"Adama Traoré";"Wolverhampton Wanderers";37;2630;2;2;2.08;5.27;0.07;0.18
+121;"Tyrone Mings";"Aston Villa";36;3194;2;2;2.06;0.38;0.06;0.01
+122;"Marcos Alonso";"Chelsea";13;962;2;0;1.82;1.72;0.17;0.16
+123;"Ben Mee";"Burnley";30;2695;2;0;1.62;0.81;0.05;0.03
+124;"Johann Berg Gudmundsson";"Burnley";22;1369;2;0;1.53;0.96;0.1;0.06
+125;"Michy Batshuayi";"Crystal Palace";18;706;2;1;1.36;1.65;0.17;0.21
+126;"Harry Maguire";"Manchester United";34;3049;2;1;1.48;0.29;0.04;0.01
+127;"Abdoulaye Doucouré";"Everton";29;2468;2;3;2.37;2.39;0.09;0.09
+128;"Matt Phillips";"West Bromwich Albion";33;1823;2;1;2.92;3.25;0.14;0.16
+129;"Hal Robson-Kanu";"West Bromwich Albion";19;522;2;0;1.5;0.24;0.26;0.04
+130;"Jeff Hendrick";"Newcastle United";22;1436;2;1;1.11;1.43;0.07;0.09
+131;"Trent Alexander-Arnold";"Liverpool";36;3040;2;7;2.59;8.58;0.08;0.25
+132;"João Cancelo";"Manchester City";28;2309;2;3;1.87;5.18;0.07;0.2
+133;"Rodri";"Manchester City";34;2751;2;2;2.66;2.34;0.09;0.08
+134;"Issa Diop";"West Ham";18;1379;2;0;0.95;0.02;0.06;0
+135;"Thiago Silva";"Chelsea";23;1938;2;0;1.32;0.29;0.06;0.01
+136;"Benjamin Mendy";"Manchester City";13;955;2;1;0.33;0.3;0.03;0.03
+137;"Serge Aurier";"Tottenham";19;1619;2;3;1.48;3.72;0.08;0.21
+138;"Bernardo Silva";"Manchester City";26;2080;2;6;3.6;4.82;0.16;0.21
+139;"Semi Ajayi";"West Bromwich Albion";33;2773;2;0;1.73;0.51;0.06;0.02
+140;"Declan Rice";"West Ham";32;2880;2;1;3.19;1.98;0.1;0.06
+141;"Aaron Wan-Bissaka";"Manchester United";34;3060;2;4;0.93;2.55;0.03;0.07
+142;"Gabriel";"Arsenal";23;1994;2;0;1.56;0.06;0.07;0
+143;"Jairo Riedewald";"Crystal Palace";33;1803;2;0;0.56;0.9;0.03;0.04
+144;"Solly March";"Brighton";21;1684;2;1;1.78;1.68;0.1;0.09
+145;"Jacob Murphy";"Newcastle United";26;1611;2;3;1.49;3.43;0.08;0.19
+146;"Timothy Castagne";"Leicester";27;2349;2;3;1.6;2.31;0.06;0.09
+147;"Callum Hudson-Odoi";"Chelsea";23;1048;2;3;1.37;3.1;0.12;0.27
+148;"Eddie Nketiah";"Arsenal";17;405;2;1;2.02;0.74;0.45;0.16
+149;"Yerry Mina";"Everton";24;1941;2;0;1.75;0.02;0.08;0
+150;"Dwight McNeil";"Burnley";36;3075;2;5;1.08;5.48;0.03;0.16
+151;"Emile Smith-Rowe";"Arsenal";20;1456;2;4;1.59;3.62;0.1;0.22
+152;"Trézéguet";"Aston Villa";21;1175;2;1;3.98;2.15;0.3;0.16
+153;"Ezri Konsa Ngoyo";"Aston Villa";36;3192;2;0;3.29;0.09;0.09;0
+154;"Gabriel Martinelli";"Arsenal";14;581;2;1;3.25;1.75;0.5;0.27
+155;"James Justin";"Leicester";23;2070;2;1;1.52;2.06;0.07;0.09
+156;"Aaron Connolly";"Brighton";17;799;2;1;4.46;0.16;0.5;0.02
+157;"Ezgjan Alioski";"Leeds";36;2475;2;3;1.75;3.33;0.06;0.12
+158;"Hakim Ziyech";"Chelsea";23;1182;2;3;1.99;4.48;0.15;0.34
+159;"Conor Gallagher";"West Bromwich Albion";30;2529;2;2;1.54;1.42;0.05;0.05
+160;"Jayden Bogle";"Sheffield United";16;1109;2;0;1.92;0.21;0.16;0.02
+161;"Fabian Schär";"Newcastle United";18;1252;1;0;1.46;0;0.1;0
+162;"Granit Xhaka";"Arsenal";31;2537;1;2;0.78;1.46;0.03;0.05
+163;"Thiago Alcántara";"Liverpool";24;1865;1;0;1.21;2.55;0.06;0.12
+164;"Joel Matip";"Liverpool";10;701;1;2;0.78;1.18;0.1;0.15
+165;"Adam Lallana";"Brighton";30;1572;1;1;1.61;2.63;0.09;0.15
+166;"Héctor Bellerín";"Arsenal";25;2098;1;2;0.86;2.17;0.04;0.09
+167;"Mohamed Elneny";"Arsenal";23;1540;1;0;0.48;0.26;0.03;0.02
+168;"Alex Iwobi";"Everton";30;1536;1;2;0.84;2.16;0.05;0.13
+169;"Scott Dann";"Crystal Palace";15;1350;1;0;0.55;0.02;0.04;0
+170;"Cheikhou Kouyaté";"Crystal Palace";36;3126;1;0;0.82;0.83;0.02;0.02
+171;"Manuel Lanzini";"West Ham";17;548;1;1;0.97;1;0.16;0.16
+172;"Andy Carroll";"Newcastle United";18;369;1;0;0.6;0.06;0.15;0.02
+173;"Juan Mata";"Manchester United";9;518;1;2;1.07;0.72;0.19;0.13
+174;"Nathan Aké";"Manchester City";10;802;1;0;0.51;0.02;0.06;0
+175;"Jordan Henderson";"Liverpool";21;1710;1;1;1.14;1.48;0.06;0.08
+176;"Kyle Walker";"Manchester City";24;1944;1;1;0.2;0.5;0.01;0.02
+177;"Toby Alderweireld";"Tottenham";25;2243;1;0;0.61;0.97;0.02;0.04
+178;"Erik Lamela";"Tottenham";23;683;1;0;1.29;0.81;0.17;0.11
+179;"Jordan Ayew";"Crystal Palace";33;2097;1;3;2.58;0.82;0.11;0.04
+180;"César Azpilicueta";"Chelsea";26;2189;1;2;0.5;2.58;0.02;0.11
+181;"Ruben Loftus-Cheek";"Chelsea,Fulham";31;1988;1;0;3.33;1.24;0.15;0.06
+182;"Gary Cahill";"Crystal Palace";20;1800;1;1;0.74;0.62;0.04;0.03
+183;"Willian";"Arsenal";25;1413;1;5;1.83;3.59;0.12;0.23
+184;"Dwight Gayle";"Newcastle United";18;483;1;1;2.93;0.28;0.55;0.05
+185;"Marc Albrighton";"Leicester";31;1731;1;5;1.25;4.04;0.06;0.21
+186;"Daniel Amartey";"Leicester";12;714;1;0;0.54;0;0.07;0
+187;"Jonjo Shelvey";"Newcastle United";30;2617;1;3;2.45;2.63;0.08;0.09
+188;"Andros Townsend";"Crystal Palace";34;2255;1;5;2.47;4.15;0.1;0.17
+189;"Robbie Brady";"Burnley";19;1061;1;1;0.78;0.91;0.07;0.08
+190;"Virgil van Dijk";"Liverpool";5;370;1;0;0.55;0;0.13;0
+191;"Oriol Romeu";"Southampton";21;1777;1;1;0.45;1.54;0.02;0.08
+192;"Jay Rodriguez";"Burnley";31;1237;1;2;2.98;1.21;0.22;0.09
+193;"Paul Dummett";"Newcastle United";15;1254;1;0;0.44;0.23;0.03;0.02
+194;"Ciaran Clark";"Newcastle United";22;1895;1;0;0.66;0.14;0.03;0.01
+195;"Alex Oxlade-Chamberlain";"Liverpool";13;238;1;1;0.3;0.3;0.11;0.11
+196;"Mason Holgate";"Everton";28;2298;1;0;1.3;0.57;0.05;0.02
+197;"Luke Shaw";"Manchester United";32;2659;1;5;0.69;6.47;0.02;0.22
+198;"Tyler Roberts";"Leeds";27;1334;1;2;1.89;2.53;0.13;0.17
+199;"Keinan Davis";"Aston Villa";15;240;1;1;1.27;0.68;0.48;0.26
+200;"Dennis Praet";"Leicester";15;730;1;1;0.44;1.22;0.05;0.15
+201;"Alisson";"Liverpool";33;2970;1;0;0.11;0;0;0
+202;"Mario Lemina";"Fulham";28;1706;1;0;1.24;1.13;0.07;0.06
+203;"Emil Krafth";"Newcastle United";16;1297;1;0;0.15;0.43;0.01;0.03
+204;"Matthew Lowton";"Burnley";34;3060;1;1;0.76;2.77;0.02;0.08
+205;"James Tarkowski";"Burnley";36;3240;1;0;3.06;0.94;0.09;0.03
+206;"David Luiz";"Arsenal";20;1410;1;0;0.67;0.52;0.04;0.03
+207;"Andrew Robertson";"Liverpool";38;3391;1;7;1.44;7.22;0.04;0.19
+208;"Oliver McBurnie";"Sheffield United";23;1306;1;0;3.55;1.05;0.24;0.07
+209;"Antonio Rüdiger";"Chelsea";19;1710;1;0;1.14;0.31;0.06;0.02
+210;"Diego Llorente";"Leeds";15;1208;1;0;0.91;0.46;0.07;0.03
+211;"Willian José";"Wolverhampton Wanderers";17;1123;1;0;1.43;1.27;0.11;0.1
+212;"Martin Odegaard";"Arsenal";14;865;1;2;0.62;1.96;0.06;0.2
+213;"João Moutinho";"Wolverhampton Wanderers";33;2546;1;1;0.5;1.68;0.02;0.06
+214;"Said Benrahma";"West Ham";30;1381;1;6;2.46;5.11;0.16;0.33
+215;"Darnell Furlong";"West Bromwich Albion";35;2926;1;3;1.93;2.46;0.06;0.08
+216;"Oliver Burke";"Sheffield United";25;1272;1;1;2.6;2.62;0.18;0.19
+217;"Caglar Söyüncü";"Leicester";23;1802;1;0;0.54;0.33;0.03;0.02
+218;"Wilfred Ndidi";"Leicester";26;2181;1;4;0.6;1.33;0.02;0.06
+219;"Luka Milivojevic";"Crystal Palace";31;2374;1;1;2.21;1.77;0.08;0.07
+220;"Yves Bissouma";"Brighton";36;3121;1;0;1.08;1.08;0.03;0.03
+221;"Giovani Lo Celso";"Tottenham";18;955;1;1;1.53;1.2;0.14;0.11
+222;"Jean-Philippe Mateta";"Crystal Palace";7;213;1;0;0.33;0.02;0.14;0.01
+223;"Jan Bednarek";"Southampton";36;3111;1;1;0.47;1.16;0.01;0.03
+224;"Victor Lindelöf";"Manchester United";29;2587;1;1;0.8;0.4;0.03;0.01
+225;"Nélson Semedo";"Wolverhampton Wanderers";34;2994;1;1;1.31;0.9;0.04;0.03
+226;"Joachim Andersen";"Fulham";31;2732;1;1;1.36;0.45;0.04;0.01
+227;"Ben Johnson";"West Ham";14;506;1;0;0.48;0.39;0.09;0.07
+228;"Grady Diangana";"West Bromwich Albion";20;1249;1;0;1.1;0.16;0.08;0.01
+229;"Curtis Jones";"Liverpool";24;1174;1;2;1.76;1.52;0.13;0.12
+230;"Rayan Ait Nouri";"Wolverhampton Wanderers";21;1414;1;1;0.51;0.79;0.03;0.05
+231;"Fred";"Manchester United";30;2404;1;0;1.73;2.23;0.06;0.08
+232;"Joe Bryan";"Fulham";16;658;1;0;0.58;0.27;0.08;0.04
+233;"Tom Cairney";"Fulham";10;762;1;1;0.58;0.99;0.07;0.12
+234;"Willy Boly";"Wolverhampton Wanderers";21;1880;1;1;1.13;0.55;0.05;0.03
+235;"Conor Coady";"Wolverhampton Wanderers";37;3305;1;0;1.45;0.2;0.04;0.01
+236;"Morgan Gibbs-White";"Wolverhampton Wanderers";11;395;1;0;0.81;0.41;0.19;0.09
+237;"Kortney Hause";"Aston Villa";7;630;1;0;1.3;0;0.19;0
+238;"Ryan Fredericks";"West Ham";14;563;1;1;0.21;1.3;0.03;0.21
+239;"Fabián Balbuena";"West Ham";14;1197;1;0;1.1;0;0.08;0
+240;"Bernard";"Everton";12;438;1;0;0.19;0.53;0.04;0.11
+241;"Leander Dendoncker";"Wolverhampton Wanderers";33;2500;1;0;3.38;0.58;0.12;0.02
+242;"Dan Burn";"Brighton";27;2059;1;0;1.08;0.98;0.05;0.04
+243;"Karlan Grant";"West Bromwich Albion";21;1140;1;0;1.69;0.15;0.13;0.01
+244;"Carlos Vinicius";"Tottenham";9;300;1;0;1.25;0.1;0.38;0.03
+245;"Adam Webster";"Brighton";29;2596;1;0;1.27;0.25;0.04;0.01
+246;"Moussa Djenepo";"Southampton";27;1236;1;0;0.79;0.4;0.06;0.03
+247;"Ben Osborn";"Sheffield United";24;1607;1;0;1.09;2.52;0.06;0.14
+248;"Conor Hourihane";"Aston Villa";4;236;1;1;0.57;0.92;0.22;0.35
+249;"Steven Alzate";"Brighton";15;905;1;0;0.83;0.92;0.08;0.09
+250;"Reece James";"Chelsea";32;2355;1;2;1.53;3.65;0.06;0.14
+251;"Kieran Tierney";"Arsenal";27;2305;1;3;0.39;3.82;0.02;0.15
+252;"Tyrick Mitchell";"Crystal Palace";19;1710;1;1;1.08;0.23;0.06;0.01
+253;"Tariq Lamptey";"Brighton";11;904;1;1;0.7;0.81;0.07;0.08
+254;"Nathaniel Phillips";"Liverpool";17;1451;1;1;1.03;0.92;0.06;0.06
+255;"Sander Berge";"Sheffield United";15;1116;1;1;1.22;1.78;0.1;0.14
+256;"Steven Bergwijn";"Tottenham";21;1218;1;3;2.09;0.81;0.15;0.06
+257;"Alexis Mac Allister";"Brighton";21;1110;1;1;1.35;1.87;0.11;0.15
+258;"Nathan Tella";"Southampton";18;734;1;1;1.99;1.09;0.24;0.13
+259;"Jimmy Dunne";"Burnley";3;270;1;0;0.42;0.1;0.14;0.03
+260;"Luke Thomas";"Leicester";14;982;1;0;0.27;0.95;0.02;0.09
+261;"Pascal Struijk";"Leeds";27;2073;1;0;2.03;0.11;0.09;0
+262;"Kalvin Phillips";"Leeds";29;2435;1;2;0.39;3.23;0.01;0.12
+263;"Joël Veltman";"Brighton";28;2281;1;1;1.28;1.85;0.05;0.07
+264;"Liam Cooper";"Leeds";25;2189;1;0;2.09;0;0.09;0
+265;"Donny van de Beek";"Manchester United";19;486;1;1;0.29;1.04;0.05;0.19
+266;"Rúben Dias";"Manchester City";32;2848;1;0;1.95;0.11;0.06;0
+267;"Kean Bryan";"Sheffield United";13;1012;1;0;0.54;0.82;0.05;0.07
+268;"Fabio Carvalho";"Fulham";4;255;1;0;1;0.5;0.35;0.18
+269;"Daniel Jebbison";"Sheffield United";4;286;1;0;1.48;0.02;0.47;0.01
+270;"Anthony Elanga";"Manchester United";2;157;1;0;0.55;0.02;0.32;0.01
+271;"Bernd Leno";"Arsenal";35;3136;0;0;0;0;0;0
+272;"Andreas Christensen";"Chelsea";17;1375;0;0;0.13;0.25;0.01;0.02
+273;"Sead Kolasinac";"Arsenal";1;90;0;0;0;0;0;0
+274;"Matt Ritchie";"Newcastle United";18;1360;0;2;0.33;2.49;0.02;0.16
+275;"Joshua King";"Everton";11;119;0;0;0.79;0;0.6;0
+276;"Divock Origi";"Liverpool";9;176;0;0;1.08;0.14;0.55;0.07
+277;"Mamadou Sakho";"Crystal Palace";4;274;0;0;0.02;0;0.01;0
+278;"James Milner";"Liverpool";26;1037;0;1;0.36;0.79;0.03;0.07
+279;"Calum Chambers";"Arsenal";10;750;0;2;0.36;1.04;0.04;0.13
+280;"Joel Ward";"Crystal Palace";26;2252;0;1;0.05;0.47;0;0.02
+281;"Martin Kelly";"Crystal Palace";1;1;0;0;0;0;0;0
+282;"Adrián";"Liverpool";3;270;0;0;0;0;0;0
+283;"James Tomkins";"Crystal Palace";8;553;0;0;0.12;0.11;0.02;0.02
+284;"Mark Noble";"West Ham";21;702;0;0;0.05;0.18;0.01;0.02
+285;"Aaron Cresswell";"West Ham";36;3176;0;8;0.88;7.39;0.03;0.21
+286;"Darren Randolph";"West Ham";3;270;0;0;0;0;0;0
+287;"Kieran Gibbs";"West Bromwich Albion";10;808;0;0;0.06;0.41;0.01;0.05
+288;"David de Gea";"Manchester United";26;2298;0;0;0;0;0;0
+289;"Timothy Fosu-Mensah";"Manchester United";1;85;0;0;0.02;0.31;0.02;0.32
+290;"Odion Ighalo";"Manchester United";1;5;0;0;0;0;0;0
+291;"Seamus Coleman";"Everton";25;1612;0;3;0.89;1.51;0.05;0.08
+292;"Phil Jagielka";"Sheffield United";10;526;0;0;0;0;0;0
+293;"James McCarthy";"Crystal Palace";16;834;0;0;0.01;0.29;0;0.03
+294;"Nathaniel Clyne";"Crystal Palace";13;1151;0;1;0.12;0.22;0.01;0.02
+295;"Fernandinho";"Manchester City";21;1170;0;2;0.82;1.54;0.06;0.12
+296;"Willy Caballero";"Chelsea";1;90;0;0;0;0;0;0
+297;"James McArthur";"Crystal Palace";18;1482;0;2;0.28;1.52;0.02;0.09
+298;"Alex McCarthy";"Southampton";30;2700;0;0;0;0;0;0
+299;"Hugo Lloris";"Tottenham";38;3420;0;0;0;0;0;0
+300;"Eric Dier";"Tottenham";28;2520;0;0;1.25;0.23;0.04;0.01
+301;"Dele Alli";"Tottenham";15;615;0;1;1.67;1.33;0.25;0.19
+302;"Ben Davies";"Tottenham";20;1330;0;1;0.2;0.44;0.01;0.03
+303;"Josh Onomah";"Fulham";11;368;0;0;0.56;0.03;0.14;0.01
+304;"Branislav Ivanovic";"West Bromwich Albion";13;761;0;0;0.46;0.05;0.05;0.01
+305;"Nemanja Matic";"Manchester United";20;1099;0;0;0.16;0.89;0.01;0.07
+306;"Fikayo Tomori";"Chelsea";1;43;0;0;0;0;0;0
+307;"Lukasz Fabianski";"West Ham";35;3150;0;0;0;0;0;0
+308;"Federico Fernández";"Newcastle United";24;2090;0;0;0.19;0.57;0.01;0.02
+309;"Neil Taylor";"Aston Villa";1;13;0;0;0;0;0;0
+310;"Jack Cork";"Burnley";16;1355;0;0;0.2;0.33;0.01;0.02
+311;"DeAndre Yedlin";"Newcastle United";6;442;0;0;0.1;0.08;0.02;0.02
+312;"Patrick van Aanholt";"Crystal Palace";22;1775;0;1;1.4;0.65;0.07;0.03
+313;"Jordan Pickford";"Everton";31;2742;0;0;0;0.02;0;0
+314;"Kasper Schmeichel";"Leicester";38;3420;0;0;0;0;0;0
+315;"Wes Morgan";"Leicester";3;13;0;0;0;0;0;0
+316;"Christian Fuchs";"Leicester";9;703;0;0;0.07;0.01;0.01;0
+317;"N&#039;Golo Kanté";"Chelsea";30;2142;0;2;0.7;1.21;0.03;0.05
+318;"Demarai Gray";"Leicester";1;17;0;0;0.06;0;0.31;0
+319;"Moussa Sissoko";"Tottenham";25;1563;0;0;0.25;0.18;0.01;0.01
+320;"Karl Darlow";"Newcastle United";25;2250;0;0;0;0;0;0
+321;"John Ruddy";"Wolverhampton Wanderers";2;91;0;0;0;0;0;0
+322;"Fraser Forster";"Southampton";8;720;0;0;0;0;0;0
+323;"Ryan Bertrand";"Southampton";29;2600;0;1;0.37;1.4;0.01;0.05
+324;"Shane Long";"Southampton";11;184;0;0;0.06;0;0.03;0
+325;"Cédric Soares";"Arsenal";10;746;0;1;0.2;0.89;0.02;0.11
+326;"Charlie Austin";"West Bromwich Albion";5;126;0;0;0.41;0;0.29;0
+327;"Jack Butland";"Crystal Palace";1;90;0;0;0;0;0;0
+328;"Phil Bardsley";"Burnley";4;272;0;0;0.06;0;0.02;0
+329;"Fabian Delph";"Everton";8;249;0;0;0.01;0.05;0.01;0.02
+330;"Matt Targett";"Aston Villa";38;3407;0;2;0.28;2.8;0.01;0.07
+331;"Kyle Walker-Peters";"Southampton";30;2655;0;2;1.14;1.25;0.04;0.04
+332;"Erik Pieters";"Burnley";20;1259;0;1;0.15;0.36;0.01;0.03
+333;"Xherdan Shaqiri";"Liverpool";14;534;0;2;0.42;2.51;0.07;0.42
+334;"Harrison Reed";"Fulham";31;2254;0;2;0.29;1.69;0.01;0.07
+335;"Axel Tuanzebe";"Manchester United";9;401;0;0;0;0;0;0
+336;"Harry Winks";"Tottenham";15;854;0;0;0.06;0.19;0.01;0.02
+337;"Sam Johnstone";"West Bromwich Albion";37;3330;0;1;0;0.11;0;0
+338;"Joseph Gomez";"Liverpool";7;594;0;0;0;0.07;0;0.01
+339;"Sam Field";"West Bromwich Albion";3;56;0;0;0;0;0;0
+340;"Tom Davies";"Everton";25;1433;0;1;0.18;0.96;0.01;0.06
+341;"Jonjoe Kenny";"Everton";4;81;0;0;0;0;0;0
+342;"Felipe Anderson";"West Ham";2;2;0;0;0;0;0;0
+343;"Emerson";"Chelsea";2;88;0;0;0;0;0;0
+344;"Moise Kean";"Everton";2;10;0;0;0.02;0;0.2;0
+345;"Allan";"Everton";24;2051;0;0;0.24;0.77;0.01;0.03
+346;"Islam Slimani";"Leicester";1;17;0;0;0.1;0.08;0.53;0.41
+347;"Ryan Fraser";"Newcastle United";18;920;0;2;0.9;2.17;0.09;0.21
+348;"Ahmed Elmohamady";"Aston Villa";14;823;0;0;0.34;0.99;0.04;0.11
+349;"Jake Livermore";"West Bromwich Albion";18;1247;0;0;0.28;0.18;0.02;0.01
+350;"Robert Snodgrass";"West Bromwich Albion,West Ham";11;533;0;0;0.21;0.54;0.03;0.09
+351;"Shkodran Mustafi";"Arsenal";3;43;0;0;0;0;0;0
+352;"Javier Manquillo";"Newcastle United";13;823;0;0;0.02;0.3;0;0.03
+353;"Jack Stephens";"Southampton";18;1544;0;0;0.89;0.46;0.05;0.03
+354;"Eric Bailly";"Manchester United";12;916;0;0;0.08;0;0.01;0
+355;"Kevin Long";"Burnley";8;635;0;0;0.61;0.02;0.09;0
+356;"Lys Mousset";"Sheffield United";11;284;0;0;0.84;0.44;0.27;0.14
+357;"Rob Holding";"Arsenal";30;2548;0;1;0.73;0.2;0.03;0.01
+358;"Ainsley Maitland-Niles";"Arsenal,West Bromwich Albion";26;1719;0;0;0.8;0.82;0.04;0.04
+359;"Arthur Masuaku";"West Ham";12;1017;0;2;0.43;2.6;0.04;0.23
+360;"Nampalys Mendy";"Leicester";23;1463;0;1;0.08;0.18;0;0.01
+361;"Lucas Digne";"Everton";30;2683;0;7;0.46;5.96;0.02;0.2
+362;"Alex Telles";"Manchester United";9;696;0;2;0.15;0.78;0.02;0.1
+363;"Pablo Hernández";"Leeds";16;403;0;2;1.42;0.86;0.32;0.19
+364;"Vicente Guaita";"Crystal Palace";37;3330;0;0;0;0;0;0
+365;"Mateo Kovacic";"Chelsea";27;1833;0;1;0.93;1.92;0.05;0.09
+366;"Kiko Casilla";"Leeds";3;270;0;0;0;0;0;0
+367;"Jonny";"Wolverhampton Wanderers";7;505;0;0;0.05;0.05;0.01;0.01
+368;"Alphonse Areola";"Fulham";36;3240;0;0;0;0;0;0
+369;"Thomas Partey";"Arsenal";24;1543;0;2;1.16;1.12;0.07;0.07
+370;"André Gomes";"Everton";28;1574;0;1;0.43;1.05;0.02;0.06
+371;"Mat Ryan";"Arsenal,Brighton";14;1260;0;0;0;0.06;0;0
+372;"Dani Ceballos";"Arsenal";25;1613;0;3;0.66;2.58;0.04;0.14
+373;"Aymeric Laporte";"Manchester City";16;1335;0;0;0.84;0.58;0.06;0.04
+374;"Oleksandr Zinchenko";"Manchester City";20;1473;0;0;0.66;1.09;0.04;0.07
+375;"Kamil Grosicki";"West Bromwich Albion";3;151;0;1;0.11;0.57;0.07;0.34
+376;"Ricardo Pereira";"Leicester";15;954;0;1;0.36;0.76;0.03;0.07
+377;"Maxime Le Marchand";"Fulham";2;118;0;0;0.01;0;0.01;0
+378;"Fabinho";"Liverpool";30;2563;0;0;0.36;0.3;0.01;0.01
+379;"Morgan Sanson";"Aston Villa";9;291;0;0;0.03;0.11;0.01;0.03
+380;"Ahmed Hegazy";"West Bromwich Albion";1;90;0;0;0;0;0;0
+381;"Emiliano Martinez";"Aston Villa";38;3420;0;0;0;0.12;0;0
+382;"Jean-Philippe Gbamin";"Everton";1;9;0;0;0;0;0;0
+383;"Aboubakar Kamara";"Fulham";11;303;0;0;0.65;0.33;0.19;0.1
+384;"Patrick Cutrone";"Wolverhampton Wanderers";2;21;0;0;0.07;0;0.31;0
+385;"Kepa";"Chelsea";7;582;0;0;0;0;0;0
+386;"Bernardo";"Brighton";3;201;0;0;0.32;0.17;0.14;0.08
+387;"Naby Keita";"Liverpool";10;525;0;0;0.39;0.91;0.07;0.16
+388;"Michael Hector";"Fulham";4;266;0;0;0.09;0.02;0.03;0.01
+389;"Nick Pope";"Burnley";32;2880;0;0;0;0.09;0;0
+390;"Rekeem Harper";"West Bromwich Albion";2;27;0;0;0.03;0;0.1;0
+391;"Rhian Brewster";"Sheffield United";27;1102;0;0;1.93;1.77;0.16;0.14
+392;"Tosin Adarabioyo";"Fulham";33;2955;0;0;1.56;0.31;0.05;0.01
+393;"Aaron Ramsdale";"Sheffield United";38;3420;0;0;0;0.08;0;0
+394;"Fernando Marçal";"Wolverhampton Wanderers";13;611;0;0;0.07;0.14;0.01;0.02
+395;"Kenny Tete";"Fulham";22;1483;0;1;0.21;0.91;0.01;0.06
+396;"Charlie Taylor";"Burnley";29;2430;0;1;0.11;1.59;0;0.06
+397;"Davy Pröpper";"Brighton";7;201;0;0;0.14;0;0.06;0
+398;"Dale Stephens";"Burnley";7;258;0;0;0.08;0;0.03;0
+399;"Ederson";"Manchester City";36;3240;0;1;0;0.3;0;0.01
+400;"Isaac Hayden";"Newcastle United";24;1946;0;0;0.61;0.24;0.03;0.01
+401;"Terence Kongolo";"Fulham";1;90;0;0;0;0;0;0
+402;"Douglas Luiz";"Aston Villa";33;2807;0;2;1.32;2.42;0.04;0.08
+403;"Cengiz Ünder";"Leicester";9;259;0;2;0.25;1.66;0.09;0.58
+404;"José Izquierdo";"Brighton";1;7;0;0;0.02;0;0.22;0
+405;"Davinson Sánchez";"Tottenham";18;1488;0;0;0.8;0.02;0.05;0
+406;"Robin Koch";"Leeds";17;1124;0;0;0.51;0.13;0.04;0.01
+407;"Andriy Yarmolenko";"West Ham";15;343;0;1;0.31;0.78;0.08;0.21
+408;"Jayson Molumby";"Brighton";1;1;0;0;0;0;0;0
+409;"Ethan Ampadu";"Sheffield United";25;2095;0;0;0.19;0.98;0.01;0.04
+410;"Joe Rodon";"Tottenham";12;730;0;0;0.02;0;0;0
+411;"Hamza Choudhury";"Leicester";10;312;0;0;0.45;0;0.13;0
+412;"Franck Zambo";"Fulham";36;2582;0;3;1.44;2.3;0.05;0.08
+413;"Cenk Tosun";"Everton";5;37;0;0;0;0.07;0;0.18
+414;"Reiss Nelson";"Arsenal";2;59;0;0;0.06;0;0.09;0
+415;"Michael Obafemi";"Southampton";4;52;0;0;0;0.05;0;0.1
+416;"Martin Dubravka";"Newcastle United";13;1170;0;0;0;0;0;0
+417;"Ibrahima Diallo";"Southampton";22;999;0;0;0.61;0.64;0.05;0.06
+418;"Lee Peltier";"West Bromwich Albion";4;230;0;0;0;0.02;0;0.01
+419;"Neeskens Kebano";"Fulham";5;112;0;0;0.27;0;0.22;0
+420;"Alireza Jahanbakhsh";"Brighton";21;512;0;1;1.87;3.23;0.33;0.57
+421;"David Button";"West Bromwich Albion";1;90;0;0;0;0;0;0
+422;"Rui Patrício";"Wolverhampton Wanderers";37;3330;0;0;0;0;0;0
+423;"Matt Doherty";"Tottenham";17;1228;0;2;0.36;0.76;0.03;0.06
+424;"Rúben Vinagre";"Wolverhampton Wanderers";2;173;0;0;0;0;0;0
+425;"Rúnar Alex Rúnarsson";"Arsenal";1;11;0;0;0;0;0;0
+426;"Edouard Mendy";"Chelsea";31;2748;0;0;0;0;0;0
+427;"Mohammed Salisu";"Southampton";12;836;0;0;0.48;0.17;0.05;0.02
+428;"Okay Yokuslu";"West Bromwich Albion";16;1328;0;1;0.72;0.44;0.05;0.03
+429;"Robin Olsen";"Everton";7;630;0;0;0;0;0;0
+430;"Denis Odoi";"Fulham";3;270;0;0;0.04;0.05;0.01;0.02
+431;"Sean Longstaff";"Newcastle United";22;1391;0;1;0.83;0.94;0.05;0.06
+432;"Tim Ream";"Fulham";7;630;0;0;0;0;0;0
+433;"Sergio Reguilón";"Tottenham";27;2258;0;3;1.16;2.1;0.05;0.08
+434;"Yan Valery";"Southampton";3;95;0;0;0.29;0.09;0.28;0.09
+435;"Ben White";"Brighton";36;3208;0;0;0.48;0.94;0.01;0.03
+436;"Kayne Ramsay";"Southampton";1;90;0;0;0;0;0;0
+437;"Max Kilman";"Wolverhampton Wanderers";18;1291;0;1;0.31;0.31;0.02;0.02
+438;"Ozan Kabak";"Liverpool";9;807;0;0;0.09;0.03;0.01;0
+439;"Josh Benson";"Burnley";6;257;0;0;0.2;0;0.07;0
+440;"Will Norris";"Burnley";2;180;0;0;0;0.05;0;0.02
+441;"Wesley Fofana";"Leicester";28;2274;0;0;1.38;0.28;0.05;0.01
+442;"Ben Godfrey";"Everton";31;2682;0;2;0.79;0.98;0.03;0.03
+443;"Jamal Lewis";"Newcastle United";24;1824;0;1;0.12;0.99;0.01;0.05
+444;"Dean Henderson";"Manchester United";13;1122;0;0;0;0;0;0
+445;"John Egan";"Sheffield United";31;2628;0;1;0.49;0.62;0.02;0.02
+446;"Chris Basham";"Sheffield United";31;2602;0;1;0.62;1.07;0.02;0.04
+447;"Jack O&#039;Connell";"Sheffield United";2;180;0;0;0;0;0;0
+448;"George Baldock";"Sheffield United";32;2787;0;2;1.33;2.63;0.04;0.09
+449;"Enda Stevens";"Sheffield United";30;2700;0;1;1.45;1.61;0.05;0.05
+450;"John Lundstram";"Sheffield United";28;2034;0;2;1.88;1.46;0.08;0.06
+451;"John Fleck";"Sheffield United";31;2576;0;2;0.5;2.39;0.02;0.08
+452;"Oliver Norwood";"Sheffield United";32;2239;0;0;0.43;1.27;0.02;0.05
+453;"Wesley";"Aston Villa";3;14;0;0;0.03;0;0.21;0
+454;"Zack Steffen";"Manchester City";1;90;0;0;0;0;0;0
+455;"Caoimhin Kelleher";"Liverpool";2;180;0;0;0;0;0;0
+456;"Daniel N&#039;Lundulu";"Southampton";13;82;0;0;0.03;0.03;0.03;0.03
+457;"Billy Gilmour";"Chelsea";5;256;0;0;0.05;0.12;0.02;0.04
+458;"Matthew Longstaff";"Newcastle United";5;376;0;0;0;0.31;0;0.08
+459;"Marvelous Nakamba";"Aston Villa";13;757;0;0;0.03;0.06;0;0.01
+460;"Eric Garcia";"Manchester City";6;378;0;0;0.07;0.01;0.02;0
+461;"Brandon Williams";"Manchester United";4;185;0;0;0.27;0.03;0.13;0.02
+462;"Niels Nkounkou";"Everton";2;80;0;0;0.02;0;0.02;0
+463;"Amad Diallo Traore";"Manchester United";3;172;0;1;0.04;0.42;0.02;0.22
+464;"Anthony Gordon";"Everton";3;87;0;0;0;0.02;0;0.02
+465;"Scott Carson";"Manchester City";1;90;0;0;0;0;0;0
+466;"Owen Otasowie";"Wolverhampton Wanderers";6;186;0;1;0.75;0.39;0.36;0.19
+467;"Neco Williams";"Liverpool";6;252;0;0;0.09;0.19;0.03;0.07
+468;"Japhet Tanganga";"Tottenham";6;496;0;0;0.2;0.58;0.04;0.11
+469;"William Smallbone";"Southampton";3;174;0;0;0.05;0;0.02;0
+470;"Oskar Buur";"Wolverhampton Wanderers";1;20;0;0;0;0;0;0
+471;"Jack Robinson";"Sheffield United";11;879;0;1;0.7;0.67;0.07;0.07
+472;"Josh Brownhill";"Burnley";33;2818;0;1;1.52;0.88;0.05;0.03
+473;"Ki-Jana Hoever";"Wolverhampton Wanderers";12;568;0;0;0.06;0.18;0.01;0.03
+474;"João Virgínia";"Everton";1;48;0;0;0;0;0;0
+475;"Pablo Marí";"Arsenal";10;900;0;0;0.04;0.05;0;0.01
+476;"Bailey Peacock-Farrell";"Burnley";4;360;0;0;0;0;0;0
+477;"Jake Vokins";"Southampton";1;69;0;0;0;0.04;0;0.05
+478;"Alexandre Jankewitz";"Southampton";2;2;0;0;0;0;0;0
+479;"Joel Mumbongo";"Burnley";4;33;0;0;0;0;0;0
+480;"Marek Rodák";"Fulham";2;180;0;0;0;0;0;0
+481;"Illan Meslier";"Leeds";35;3150;0;0;0;0.04;0;0
+482;"Luke Ayling";"Leeds";38;3400;0;0;1.44;2.99;0.04;0.08
+483;"Jamie Shackleton";"Leeds";13;446;0;0;0;0.12;0;0.02
+484;"Ian Poveda-Ocampo";"Leeds";14;322;0;0;0.66;1.26;0.18;0.35
+485;"Dara O&#039;Shea";"West Bromwich Albion";28;2098;0;0;0.06;0.12;0;0.01
+486;"Romaine Sawyers";"West Bromwich Albion";19;1495;0;0;0.15;0.68;0.01;0.04
+487;"Kyle Edwards";"West Bromwich Albion";5;110;0;0;0.12;0.02;0.1;0.02
+488;"Vitinha";"Wolverhampton Wanderers";19;500;0;1;0.66;0.72;0.12;0.13
+489;"Konstantinos Tsimikas";"Liverpool";2;4;0;0;0;0;0;0
+490;"Matthew Cash";"Aston Villa";28;2389;0;2;0.25;1.91;0.01;0.07
+491;"Liam Delap";"Manchester City";1;39;0;0;0.06;0;0.15;0
+492;"Conor Townsend";"West Bromwich Albion";25;2237;0;2;0.82;2.65;0.03;0.11
+493;"Max Lowe";"Sheffield United";8;554;0;0;0.09;0.19;0.01;0.03
+494;"Leif Davis";"Leeds";2;28;0;0;0;0;0;0
+495;"Antonee Robinson";"Fulham";28;2158;0;0;0.47;2.03;0.02;0.08
+496;"Jacob Ramsey";"Aston Villa";22;593;0;0;0.57;0.21;0.09;0.03
+497;"Vladimir Coufal";"West Ham";34;3056;0;7;1.4;6.39;0.04;0.19
+498;"Filip Krovinovic";"West Bromwich Albion";11;537;0;0;0.22;0.17;0.04;0.03
+499;"Lewis Richardson";"Burnley";2;2;0;0;0;0;0;0
+500;"Rhys Williams";"Liverpool";9;661;0;0;0.55;0.22;0.08;0.03
+501;"Robert Sánchez";"Brighton";27;2430;0;0;0;0.03;0;0
+502;"Andi Zeqiri";"Brighton";9;138;0;0;1.03;0.11;0.67;0.07
+503;"Elliot Anderson";"Newcastle United";1;3;0;0;0;0;0;0
+504;"Theo Corbeanu";"Wolverhampton Wanderers";1;7;0;0;0;0.02;0;0.3
+505;"Niall Huggins";"Leeds";1;35;0;0;0;0;0;0
+506;"Antwoine Hackford";"Sheffield United";1;4;0;0;0.1;0;2.33;0
+507;"Percy Tau";"Brighton";3;100;0;1;0;0.37;0;0.33
+508;"Reda Khadra";"Brighton";1;3;0;0;0;0;0;0
+509;"Caleb Watts";"Southampton";3;30;0;0;0;0;0;0
+510;"Allan Tchaptchet";"Southampton";1;10;0;0;0;0;0;0
+511;"Jakub Moder";"Brighton";12;643;0;0;0.92;0.21;0.13;0.03
+512;"Iliman Ndiaye";"Sheffield United";1;10;0;0;0;0;0;0
+513;"Thakgalo Leshabela";"Leicester";1;8;0;0;0;0;0;0
+514;"Dane Scarlett";"Tottenham";1;1;0;0;0;0;0;0
+515;"Carney Chukwuemeka";"Aston Villa";2;16;0;0;0.06;0;0.32;0
+516;"Shola Shoretire";"Manchester United";2;4;0;0;0;0;0;0
+517;"Sidnei Tavares";"Leicester";2;84;0;0;0.02;0;0.02;0
+518;"Nathan Broadhead";"Everton";1;1;0;0;0;0;0;0
+519;"Jaden Philogene-Bidace";"Aston Villa";1;1;0;0;0;0;0;0
+520;"Gaetano Berardi";"Leeds";2;113;0;0;0.07;0;0.06;0
+521;"Femi Seriki";"Sheffield United";1;1;0;0;0;0;0;0
+522;"Tyrese Francois";"Fulham";1;13;0;0;0;0;0;0
+523;"William Fish";"Manchester United";1;1;0;0;0;0;0;0
+524;"Hannibal Mejbri";"Manchester United";1;3;0;0;0;0;0;0
