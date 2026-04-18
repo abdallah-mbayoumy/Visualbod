@@ -1,4 +1,4 @@
-# ⚡ PremierStat — English Premier League Analytics Dashboard
+# PremierStat — English Premier League Analytics Dashboard
 
 > A full-stack football analytics platform covering **5 EPL seasons (2020–2025)**, built with Python, Flask, SQL Server, and Chart.js. Designed to surface deep insights on players, teams, and expected goals across one of the world's most competitive leagues.
 
