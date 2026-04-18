@@ -7,16 +7,16 @@
 ## Screenshots
 
 ### Overview — KPIs & Season Superstars
-![Overview](Screenshot 2026-04-18 203335.png)
+![Overview](Overview.png)
 
 ### Standings — Full League Table with xG Metrics
-![Standings](Screenshot 2026-04-18 203426.png)
+![Standings](Standings.png)
 
 ### Players — Sortable Stats Database + Performance Charts
-![Players](Screenshot 2026-04-18 203449.png)
+![Players](players.png)
 
 ### xG Analysis — Overperformers, Scatter Plot & Bubble Chart
-![xG Analysis](Screenshot 2026-04-18 203542.png)
+![xG Analysis](xg.png)
 
 ---
 
