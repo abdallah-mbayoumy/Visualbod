@@ -380,13 +380,16 @@ def insert_squad_extended(cursor, season_ids, team_cache):
             lines = f.readlines()
         for i, line in enumerate(lines):
             if line.startswith('Squad,# Pl,Age,Poss') or ('Squad' in line and 'Poss' in line and 'CrdY' in line):
+                # Build column index from header — safe against column order changes
+                hparts = lines[i].strip().replace('"','').split(',')
+                col = {h.strip():idx for idx,h in enumerate(hparts)}
                 count = 0
                 for j in range(i+1, i+30):
                     if j>=len(lines): break
                     l = lines[j].strip().replace('"','')
                     if not l or l.startswith('Squad') or l.startswith(','): break
                     parts = l.split(',')
-                    if len(parts)<16: continue
+                    if len(parts)<10: continue
                     tname = parts[0].strip()
                     if not tname: continue
                     tid = team_cache.get(tname)
@@ -395,8 +398,12 @@ def insert_squad_extended(cursor, season_ids, team_cache):
                         r = cursor.fetchone()
                         if r: tid=r[0]
                     if not tid: continue
-                    poss=safe_float(parts[3]); crdy=safe_int(parts[14]); crdr=safe_int(parts[15])
-                    pk=safe_int(parts[12]); pkatt=safe_int(parts[13])
+                    # Header-based indexing — CrdY and CrdR positions vary by file
+                    poss  = safe_float(parts[col.get('Poss', 3)])
+                    crdy  = safe_int(parts[col.get('CrdY', 14)])
+                    crdr  = safe_int(parts[col.get('CrdR', 15)])
+                    pk    = safe_int(parts[col.get('PK',   12)])
+                    pkatt = safe_int(parts[col.get('PKatt',13)])
                     cursor.execute("""
                         IF EXISTS (SELECT 1 FROM TeamExtendedStats WHERE TeamID=? AND SeasonID=?)
                             UPDATE TeamExtendedStats SET Possession=?,YellowCards=?,RedCards=?,Penalties=?,PenaltiesAtt=? WHERE TeamID=? AND SeasonID=?

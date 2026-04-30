@@ -750,9 +750,17 @@ async function loadStandings(){
   // Cards
   if(disc.length){
     const topD=disc.slice(0,15);
-    vBar('cCards',topD.map(d=>sh(d.TeamName)),
-      [{label:'Yellow Cards',data:topD.map(d=>d.YellowCards),backgroundColor:a(C.amber,.8),borderRadius:3},
-       {label:'Red Cards',data:topD.map(d=>d.RedCards*3),backgroundColor:a(C.magma,.8),borderRadius:3}]);
+    // Sort by yellow cards descending
+    const sortedD = [...topD].sort((a,b)=>b.YellowCards-a.YellowCards).slice(0,15);
+    mk('cCards',{type:'bar',
+      data:{labels:sortedD.map(d=>sh(d.TeamName)),datasets:[
+        {label:'Yellow Cards',data:sortedD.map(d=>d.YellowCards),backgroundColor:a(C.amber,.85),borderRadius:3},
+        {label:'Red Cards',   data:sortedD.map(d=>d.RedCards),   backgroundColor:a(C.magma,.85),borderRadius:3}
+      ]},
+      options:{responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{display:true,labels:{color:'#94a3b8',boxWidth:9,font:{size:10}}},tooltip:{mode:'index',callbacks:{label:c=>`${c.dataset.label}: ${c.parsed.y}`}}},
+        scales:{x:{grid:{display:false},ticks:{maxRotation:38,color:'#5a6480',font:{size:9}}},
+                y:{grid:{color:a('#1c2135',.8)},ticks:{color:'#5a6480'}}}}});
   }
 
   // Goal Difference
