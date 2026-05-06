@@ -104,7 +104,7 @@ def get_conn():
 # SETUP NEW TABLES
 # ============================================================
 def setup_db(cursor):
-    print("\n🔧 Setting up tables...")
+    print("\nSetting up tables...")
     cursor.execute("""
         IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME='TeamSeasonStats')
         CREATE TABLE TeamSeasonStats (
@@ -143,7 +143,7 @@ def setup_db(cursor):
             YellowCards INT DEFAULT 0, RedCards INT DEFAULT 0,
             Penalties INT DEFAULT 0, PenaltiesAtt INT DEFAULT 0)
     """)
-    print("   ✅ All tables ready")
+    print("All tables ready")
 
 # ============================================================
 # CLEAR DATA
@@ -153,7 +153,7 @@ def clear_data(cursor):
     for tbl in ['PlayerExtendedStats','TeamExtendedStats','TeamSeasonStats','PlayerStats','Players','Teams','Seasons']:
         try: cursor.execute(f"DELETE FROM {tbl}")
         except: pass
-    print("   ✅ Done")
+    print("Done")
 
 # ============================================================
 # HELPERS
@@ -208,7 +208,7 @@ def parse_score(s):
 # INSERT SEASONS
 # ============================================================
 def insert_seasons(cursor):
-    print("\n📅 Inserting seasons...")
+    print("\nInserting seasons...")
     ids = {}
     for name in SEASON_MAP:
         cursor.execute("INSERT INTO Seasons (SeasonName) VALUES (?)", (name,))
@@ -222,7 +222,7 @@ def insert_seasons(cursor):
 # INSERT CORE (standings + players)
 # ============================================================
 def insert_core(cursor, season_ids, team_cache):
-    print("\n📊 Inserting league standings and player stats...")
+    print("\nInserting league standings and player stats...")
     player_cache = {}
 
     for season, info in SEASON_MAP.items():
@@ -248,11 +248,11 @@ def insert_core(cursor, season_ids, team_cache):
                 cursor.executemany("""INSERT INTO TeamSeasonStats
                     (TeamID,SeasonID,Matches,Wins,Draws,Loses,Goals,GoalsAgainst,Points,xG,xGA,xPTS)
                     VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""", rows)
-                print(f"   ✅ {season}: {len(rows)} team standings")
+                print(f"{season}: {len(rows)} team standings")
             except Exception as e:
-                print(f"   ⚠️  {season} standings error: {e}")
+                print(f"{season} standings error: {e}")
         else:
-            print(f"   ⚠️  {season}: chemp file not found in {folder}")
+            print(f"{season}: chemp file not found in {folder}")
 
         # --- Player Stats ---
         pp = get_path(info, 'players')
@@ -280,11 +280,11 @@ def insert_core(cursor, season_ids, team_cache):
                 cursor.executemany("""INSERT INTO PlayerStats
                     (PlayerID,SeasonID,Apps,Minutes,Goals,Assists,xG,xA,xG90,xA90)
                     VALUES (?,?,?,?,?,?,?,?,?,?)""", stats_rows)
-                print(f"   ✅ {season}: {len(stats_rows)} player stats" + (f" ({errors} skipped)" if errors else ""))
+                print(f"{season}: {len(stats_rows)} player stats" + (f" ({errors} skipped)" if errors else ""))
             except Exception as e:
-                print(f"   ⚠️  {season} players error: {e}")
+                print(f"{season} players error: {e}")
         else:
-            print(f"   ⚠️  {season}: players file not found in {folder}")
+            print(f"{season}: players file not found in {folder}")
 
     return player_cache
 
@@ -292,13 +292,13 @@ def insert_core(cursor, season_ids, team_cache):
 # INSERT SHOOTING
 # ============================================================
 def insert_shooting(cursor, season_ids, team_cache):
-    print("\n🎯 Inserting shooting stats...")
+    print("\nInserting shooting stats...")
     for season, info in SEASON_MAP.items():
         path = get_path(info, 'shooting')
-        if not path: print(f"   ⚠️  {season}: no shooting file"); continue
+        if not path: print(f"{season}: no shooting file"); continue
         sid = season_ids[season]
         _, rows = parse_fbref_table(path, ['Squad','Sh','SoT'])
-        if not rows: print(f"   ⚠️  {season}: could not parse shooting"); continue
+        if not rows: print(f"{season}: could not parse shooting"); continue
         count = 0
         for row in rows:
             tname = row.get('Squad','').strip()
@@ -325,7 +325,7 @@ def insert_shooting(cursor, season_ids, team_cache):
                 safe_float(row.get('Sh/90')),safe_float(row.get('SoT/90')),safe_float(row.get('G/Sh')),
                 safe_int(row.get('PK')),safe_int(row.get('PKatt')))
             count+=1
-        print(f"   ✅ {season}: {count} teams shooting")
+        print(f"{season}: {count} teams shooting")
 
 # ============================================================
 # INSERT PLAYER EXTENDED (position, cards, nation)
@@ -334,7 +334,7 @@ def insert_player_extended(cursor, season_ids, player_cache):
     print("\n👤 Inserting player positions and cards...")
     for season, info in SEASON_MAP.items():
         path = get_path(info, 'player_stats')
-        if not path: print(f"   ⚠️  {season}: no player stats file"); continue
+        if not path: print(f"{season}: no player stats file"); continue
         sid = season_ids[season]
         with open(path, encoding='utf-8-sig') as f:
             lines = f.readlines()
@@ -342,7 +342,7 @@ def insert_player_extended(cursor, season_ids, player_cache):
         for i, line in enumerate(lines):
             if line.startswith('Rk,Player,Nation,Pos') or ('Player' in line and 'Pos' in line and 'Nation' in line):
                 header_line = i; break
-        if header_line is None: print(f"   ⚠️  {season}: player header not found"); continue
+        if header_line is None: print(f"{season}: player header not found"); continue
         rows = []
         for line in lines[header_line+1:]:
             l = line.strip()
@@ -365,13 +365,14 @@ def insert_player_extended(cursor, season_ids, player_cache):
             cursor.executemany("""INSERT INTO PlayerExtendedStats
                 (PlayerID,SeasonID,Position,Nation,Age,Starts,YellowCards,RedCards,Penalties,PenaltiesAtt)
                 VALUES (?,?,?,?,?,?,?,?,?,?)""", rows)
-        print(f"   ✅ {season}: {len(rows)} players with position/cards")
+        print(f"{season}: {len(rows)} players with position/cards")
 
 # ============================================================
 # INSERT SQUAD EXTENDED (possession, discipline from squad section)
 # ============================================================
 def insert_squad_extended(cursor, season_ids, team_cache):
-    print("\n📋 Inserting possession and discipline...")
+    import csv as _csv, io as _io
+    print("\nInserting possession and discipline...")
     for season, info in SEASON_MAP.items():
         path = get_path(info, 'player_stats')
         if not path: continue
@@ -380,15 +381,19 @@ def insert_squad_extended(cursor, season_ids, team_cache):
             lines = f.readlines()
         for i, line in enumerate(lines):
             if line.startswith('Squad,# Pl,Age,Poss') or ('Squad' in line and 'Poss' in line and 'CrdY' in line):
-                # Build column index from header — safe against column order changes
-                hparts = lines[i].strip().replace('"','').split(',')
+                # Build exact column map from header
+                hparts = lines[i].strip().split(',')
                 col = {h.strip():idx for idx,h in enumerate(hparts)}
                 count = 0
                 for j in range(i+1, i+30):
                     if j>=len(lines): break
-                    l = lines[j].strip().replace('"','')
-                    if not l or l.startswith('Squad') or l.startswith(','): break
-                    parts = l.split(',')
+                    raw = lines[j].strip()
+                    if not raw or raw.startswith('Squad') or raw.startswith(','): break
+                    # Use csv reader to correctly handle quoted fields like "3,420"
+                    try:
+                        parts = next(_csv.reader(_io.StringIO(raw)))
+                    except:
+                        continue
                     if len(parts)<10: continue
                     tname = parts[0].strip()
                     if not tname: continue
@@ -398,12 +403,15 @@ def insert_squad_extended(cursor, season_ids, team_cache):
                         r = cursor.fetchone()
                         if r: tid=r[0]
                     if not tid: continue
-                    # Header-based indexing — CrdY and CrdR positions vary by file
-                    poss  = safe_float(parts[col.get('Poss', 3)])
-                    crdy  = safe_int(parts[col.get('CrdY', 14)])
-                    crdr  = safe_int(parts[col.get('CrdR', 15)])
-                    pk    = safe_int(parts[col.get('PK',   12)])
-                    pkatt = safe_int(parts[col.get('PKatt',13)])
+                    # Safe getter using header column index
+                    def gp(c, d='0'):
+                        idx = col.get(c)
+                        return parts[idx] if idx is not None and idx < len(parts) else d
+                    poss  = safe_float(gp('Poss','0'))
+                    crdy  = safe_int(gp('CrdY','0'))   # Yellow Cards
+                    crdr  = safe_int(gp('CrdR','0'))   # Red Cards
+                    pk    = safe_int(gp('PK','0'))
+                    pkatt = safe_int(gp('PKatt','0'))
                     cursor.execute("""
                         IF EXISTS (SELECT 1 FROM TeamExtendedStats WHERE TeamID=? AND SeasonID=?)
                             UPDATE TeamExtendedStats SET Possession=?,YellowCards=?,RedCards=?,Penalties=?,PenaltiesAtt=? WHERE TeamID=? AND SeasonID=?
@@ -412,17 +420,14 @@ def insert_squad_extended(cursor, season_ids, team_cache):
                             VALUES (?,?,?,?,?,?,?)
                     """, tid,sid,poss,crdy,crdr,pk,pkatt,tid,sid, tid,sid,poss,crdy,crdr,pk,pkatt)
                     count+=1
-                print(f"   ✅ {season}: {count} teams possession/discipline")
+                print(f"{season}: {count} teams possession/discipline")
                 break
 
-# ============================================================
-# INSERT FIXTURES (home/away + attendance)
-# ============================================================
 def insert_fixtures(cursor, season_ids, team_cache):
-    print("\n🏟️  Inserting fixture data...")
+    print("\nInserting fixture data...")
     for season, info in SEASON_MAP.items():
         path = get_path(info, 'fixtures')
-        if not path: print(f"   ⚠️  {season}: no fixtures file"); continue
+        if not path: print(f"{season}: no fixtures file"); continue
         sid = season_ids[season]
         with open(path, encoding='utf-8-sig') as f:
             lines = f.readlines()
@@ -430,7 +435,7 @@ def insert_fixtures(cursor, season_ids, team_cache):
         for i, line in enumerate(lines):
             if 'Wk' in line and 'Home' in line and 'Score' in line:
                 header_line = i; break
-        if header_line is None: print(f"   ⚠️  {season}: fixture header not found"); continue
+        if header_line is None: print(f"{season}: fixture header not found"); continue
         content = ''.join(lines[header_line:])
         reader = csv.DictReader(io.StringIO(content))
         matches = [r for r in reader if r.get('Score','') and '–' in r.get('Score','')]
@@ -472,7 +477,7 @@ def insert_fixtures(cursor, season_ids, team_cache):
             """, tid,sid,s['hw'],s['hd'],s['hl'],s['hg'],s['aw'],s['ad'],s['al'],s['ag'],avg_att,tid,sid,
                  tid,sid,s['hw'],s['hd'],s['hl'],s['hg'],s['aw'],s['ad'],s['al'],s['ag'],avg_att)
             count+=1
-        print(f"   ✅ {season}: {count} teams home/away/attendance")
+        print(f"{season}: {count} teams home/away/attendance")
 
 # ============================================================
 # MAIN
@@ -483,15 +488,15 @@ def main():
     print("="*58)
 
     # Show what files were found
-    print("\n📂 Checking files...")
+    print("\nChecking files...")
     for season, info in SEASON_MAP.items():
         folder = info['folder']
         exists = os.path.exists(folder)
-        print(f"\n  {season} → {folder} {'✅' if exists else '❌ NOT FOUND'}")
+        print(f"\n  {season} → {folder} {'✅' if exists else ' NOT FOUND'}")
         if exists:
             for ftype in ['chemp','players','player_stats','fixtures','shooting']:
                 p = get_path(info, ftype)
-                status = f"✅ {os.path.basename(p)}" if p else "⚠️  not found"
+                status = f"{os.path.basename(p)}" if p else "  not found"
                 print(f"    {ftype:15}: {status}")
 
     print("\n" + "="*58)
@@ -529,7 +534,7 @@ def main():
 
         elapsed = time.time()-start
         print(f"\n{'='*58}")
-        print(f"  ✅ IMPORT COMPLETE in {elapsed:.1f}s")
+        print(f"MPORT COMPLETE in {elapsed:.1f}s")
         print(f"  Seasons : {len(season_ids)}")
         print(f"  Teams   : {len(team_cache)}")
         print(f"  Players : {len(player_cache)}")
@@ -537,7 +542,7 @@ def main():
 
     except Exception as e:
         conn.rollback()
-        print(f"\n❌ FATAL ERROR: {e}")
+        print(f"\nFATAL ERROR: {e}")
         import traceback; traceback.print_exc()
     finally:
         conn.close()

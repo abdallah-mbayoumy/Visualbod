@@ -458,13 +458,7 @@ input[type=text]::placeholder{color:var(--muted);}
     </div>
   </div>
 
-  <div class="sec">Top Players per Position</div>
-  <div class="gf card">
-    <div class="card-title"><div class="ct ct-lava"></div>BEST PLAYER PER POSITION (by goals in selected season)
-      <span class="info-tip" data-tip="The player with the most goals in each position for the selected season. Uses FBref position data. Only available for seasons where player stats files were provided.">?</span>
-    </div>
-    <div class="heroes" id="posLeaders"><div class="loading">Loading…</div></div>
-  </div>
+
 
   <div class="gf card">
     <div class="card-title"><div class="ct ct-amber"></div>FULL POSITION BREAKDOWN TABLE
@@ -751,16 +745,36 @@ async function loadStandings(){
   if(disc.length){
     const topD=disc.slice(0,15);
     // Sort by yellow cards descending
-    const sortedD = [...topD].sort((a,b)=>b.YellowCards-a.YellowCards).slice(0,15);
+    // Sort by yellow cards descending (most disciplined issue = most yellows)
+    const sortedD = [...topD].sort((a,b)=>(b.YellowCards||0)-(a.YellowCards||0)).slice(0,15);
     mk('cCards',{type:'bar',
       data:{labels:sortedD.map(d=>sh(d.TeamName)),datasets:[
-        {label:'Yellow Cards',data:sortedD.map(d=>d.YellowCards),backgroundColor:a(C.amber,.85),borderRadius:3},
-        {label:'Red Cards',   data:sortedD.map(d=>d.RedCards),   backgroundColor:a(C.magma,.85),borderRadius:3}
+        {
+          label:'Yellow Cards',
+          data:sortedD.map(d=>d.YellowCards),
+          backgroundColor:'rgba(245,158,11,0.85)',
+          borderColor:'rgba(245,158,11,1)',
+          borderWidth:1,
+          borderRadius:3
+        },
+        {
+          label:'Red Cards',
+          data:sortedD.map(d=>d.RedCards),
+          backgroundColor:'rgba(220,38,38,0.85)',
+          borderColor:'rgba(220,38,38,1)',
+          borderWidth:1,
+          borderRadius:3
+        }
       ]},
       options:{responsive:true,maintainAspectRatio:false,
-        plugins:{legend:{display:true,labels:{color:'#94a3b8',boxWidth:9,font:{size:10}}},tooltip:{mode:'index',callbacks:{label:c=>`${c.dataset.label}: ${c.parsed.y}`}}},
-        scales:{x:{grid:{display:false},ticks:{maxRotation:38,color:'#5a6480',font:{size:9}}},
-                y:{grid:{color:a('#1c2135',.8)},ticks:{color:'#5a6480'}}}}});
+        plugins:{
+          legend:{display:true,labels:{color:'#94a3b8',boxWidth:9,font:{size:10}}},
+          tooltip:{mode:'index',callbacks:{label:c=>`${c.dataset.label}: ${c.parsed.y}`}}
+        },
+        scales:{
+          x:{grid:{display:false},ticks:{maxRotation:38,color:'#5a6480',font:{size:9}}},
+          y:{grid:{color:'rgba(28,33,53,0.8)'},ticks:{color:'#5a6480'}}
+        }}});
   }
 
   // Goal Difference
@@ -861,14 +875,14 @@ async function loadXG(){
 
 // ── POSITIONS ──────────────────────────────────────────────
 async function loadPositions(){
-  const[stats,leaders]=await Promise.all([
-    api(qs('/api/position-stats')),
-    api(qs('/api/position-leaders'))
+  const[stats]=await Promise.all([
+    api(qs('/api/position-stats'))
   ]);
+  const leaders=[];
 
   if(!stats.length){
     document.getElementById('posBody').innerHTML='<tr><td colspan="10" class="loading">No position data — requires FBref player stats files for selected season</td></tr>';
-    document.getElementById('posLeaders').innerHTML='<div class="loading">No position data available for selected season</div>';
+
     return;
   }
 
@@ -897,20 +911,7 @@ async function loadPositions(){
     [{label:'Yellow Cards',data:clean.map(d=>d.TotalYellows),backgroundColor:a(C.amber,.8),borderRadius:4},
      {label:'Red Cards',data:clean.map(d=>d.TotalReds),backgroundColor:a(C.magma,.8),borderRadius:4}]);
 
-  // Leaders heroes
-  const ph=document.getElementById('posLeaders');
-  const icons={'FW':'⚽','MF':'🎯','DF':'🛡️','GK':'🧤'};
-  if(!leaders.length){ph.innerHTML='<div class="loading">No leader data for this season</div>';}
-  else{
-    ph.innerHTML=leaders.map(l=>`<div class="hero">
-      <div class="hero-icon">${icons[l.Position]||'🏅'}</div>
-      <div class="hero-lbl">${POS_LABEL[l.Position]||l.Position}</div>
-      <div class="hero-name">${l.PlayerName}</div>
-      <div class="hero-team">${l.TeamName}</div>
-      <div class="hero-stat">${l.Goals}</div>
-      <div class="hero-season">${l.SeasonName} · ${l.Goals} goals</div>
-    </div>`).join('');
-  }
+
 
   // Table
   document.getElementById('posBody').innerHTML=clean.map(d=>`<tr>
